@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 45px;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    margin: 20px;
+  }
+}
+
+.LogoKaza {
+  height: 3em;
+}
+
+.liens {
+  margin-top: 17px;
+}
+.liens .about, .liens .acceuil {
+  padding-left: 57px;
+  text-decoration: none;
+  color: #FF6060;
+  font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+  .liens .about, .liens .acceuil {
+    padding-left: 20px;
+    font-size: 12px;
+  }
+}
+.liens .selected {
+  text-decoration: underline;
+}/*# sourceMappingURL=header.css.map */
