@@ -1,4 +1,10 @@
 body {
   font-family: Montserrat;
   margin: 0px;
+}
+
+.Banner {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 89px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,65 @@
+div {
+    margin: 0px 45px 0px;
+    margin-bottom: 80px;
+    @media screen and (max-width: 768px){
+        margin: 20px;
+    }
+    .card {
+        @media screen and (max-width: 768px){
+            flex-direction: column;
+            margin: 0px;
+        }
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+    }
+    section {
+        width: 30%;
+        height: 340px;
+        margin: 5px;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        :hover {
+            cursor: pointer;
+        }
+        @media screen and (max-width: 768px){
+            width: 100%;
+            margin: 0px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .pictureCard {
+            height: 100%; 
+            z-index: 1;
+            
+        }
+        .gradient {
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(255,255,255,0) 35%, rgba(93,93,93,1) 100%);
+            position: absolute;
+            z-index: 2;
+            margin: 0px;
+            //opacity: 0.7;
+        }
+        
+        p{
+            width: 90%;
+            position: absolute;
+            top : 75%;
+            color: white;
+            margin: 10px;
+            font-size: 18px;
+            z-index: 3;
+        }
+
+    }
+    
+}
+
+

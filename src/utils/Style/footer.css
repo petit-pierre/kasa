@@ -6,6 +6,15 @@
   padding-bottom: 66px;
   padding-left: 3em;
   padding-right: 3em;
+  margin-left: -45px;
+  margin-right: -45px;
+  margin-bottom: -80px;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
 }
 .footer .LogoKaza {
   padding-top: 66px;

@@ -1,5 +1,4 @@
-function Error404() {
-  
+function Error404() { 
     return (
       <h1>
         404
