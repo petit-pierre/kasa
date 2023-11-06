@@ -1,15 +1,14 @@
-import LogoKaza from '../../assets/LOGOfooter.png'
-import "../../utils/Style/footer.css"
-import "../../utils/Style/style.css"
+import LogoKaza from "../../assets/LOGOfooter.png";
+import "../../style/footer.css";
+import "../../style/style.css";
 
 function Footer() {
-  
-    return (
-      <div className='footer'>
+  return (
+    <div className="footer">
       <img className="LogoKaza" src={LogoKaza} alt="Logo Kaza"></img>
       <p>© 2020 Kasa. All rights reserved</p>
-      </div>
-    )
-  }
+    </div>
+  );
+}
 
-export default Footer
+export default Footer;

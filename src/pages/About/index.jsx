@@ -1,13 +1,10 @@
 import EnTete from "../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png";
-import "../../utils/Style/style.css";
-import "../../utils/Style/about.css";
+import "../../style/style.css";
+import "../../style/about.css";
 import Collapse from "../../components/Collapse";
 let CollapseAbout = require(`../../data/collapse-about.json`);
 
 function About() {
-  let name = "Fiabilité";
-  let content =
-    "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.";
   return (
     <div>
       <img className="Banner" src={EnTete} alt="En tete" />

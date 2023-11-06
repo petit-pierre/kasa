@@ -1,0 +1,38 @@
+.sliderContainer {
+    height: 415px;
+    object-fit: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imageSlider {
+
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.counter {
+    position: absolute;
+    z-index: 3;
+    top: 375px;
+    left: 48%;
+    font-size: 18px;
+    color: #FFF; 
+}
+
+.arrowLeft {
+    position: absolute;
+    z-index: 3;
+    top: 170px;
+    left: 0px;
+    cursor: pointer;
+}
+
+.arrowRight {
+    position: absolute;
+    z-index: 3;
+    top: 170px;
+    right: 0px;
+    cursor: pointer;
+}

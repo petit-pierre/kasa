@@ -1,9 +1,17 @@
-function Error404() { 
-    return (
-      <h1>
-        404
-      </h1>
-    )
-  }
+import "../../style/style.css";
+import "../../style/404.css";
+import { Link } from "react-router-dom";
 
-export default Error404
+function Error404() {
+  return (
+    <div>
+      <h1 className="bigTitle">404</h1>
+      <p>Oups! La page que vous demandez n'existe pas.</p>
+      <Link to="./" className="acceuil">
+        Retourner sur la page d’accueil
+      </Link>
+    </div>
+  );
+}
+
+export default Error404;
