@@ -90,4 +90,10 @@
   margin-right: 10px;
   font-size: 18px;
   color: #FF6060;
+}
+
+.stars {
+  display: flex;
+  justify-content: right;
+  margin-top: 25px;
 }/*# sourceMappingURL=housing.css.map */

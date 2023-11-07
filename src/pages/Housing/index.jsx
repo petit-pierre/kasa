@@ -1,5 +1,7 @@
 //import { redirect } from "react-router-dom";
 import Slider from "../../components/Slider";
+import StarActive from "../../assets/star-active.png";
+import StarInactive from "../../assets/star-inactive.png";
 import "../../style/style.css";
 import "../../style/Housing.css";
 import Collapse from "../../components/Collapse";
@@ -31,6 +33,13 @@ function Housing() {
           <div className="host">
             <img src={house.host.picture} className="hostPicture" alt="hote" />
             <p className="hostName">{house.host.name}</p>
+          </div>
+          <div className="stars">
+            <img className="star" src={StarActive} alt="logo etoile" />
+            <img className="star" src={StarActive} alt="logo etoile" />
+            <img className="star" src={StarActive} alt="logo etoile" />
+            <img className="star" src={StarActive} alt="logo etoile" />
+            <img className="star" src={StarActive} alt="logo etoile" />
           </div>
         </div>
       </section>
