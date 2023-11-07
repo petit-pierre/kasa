@@ -11,7 +11,7 @@ function Collapse(name, content) {
   return (
     <div className="body">
       <div className="headerCollapse">
-        <p>{name}</p>
+        <p className="titleCollapse">{name}</p>
         <img
           className={open ? "openArrow" : "closedArrow"}
           src={Arrow}

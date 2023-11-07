@@ -6,10 +6,10 @@ let Logements = require(`../../data/logements.json`);
 
 function Home() {
   return (
-    <div>
+    <div className="div">
       <img className="Banner" src={EnTete} alt="En tete" />
 
-      <div className="card">
+      <div className="card div">
         {Logements.map((Log) => (
           <Link
             to={"./Housing/" + Log.id}
@@ -23,7 +23,7 @@ function Home() {
               //}}
             >
               <img className="pictureCard" src={Log.cover} alt="Logement" />
-              <div className="gradient"></div>
+              <div className="gradient div"></div>
               <p>{Log.title}</p>
             </section>
           </Link>

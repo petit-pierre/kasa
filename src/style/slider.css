@@ -8,8 +8,18 @@
 }
 
 .imageSlider {
+  width: 150%;
   min-width: 100%;
   min-height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .imageSlider {
+    width: 200%;
+  }
 }
 
 .counter {
