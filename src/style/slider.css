@@ -21,6 +21,8 @@
 }
 
 .carousel-img {
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
   min-width: 100%;
   min-height: 415px;

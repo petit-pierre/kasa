@@ -20,8 +20,7 @@
   }
 
   .carousel-img {
-    //width: 100%;
-    //padding: 0 20px 0 20px;
+    object-fit: cover;
     position: relative;
     //width: 150%;
     min-width: 100%;
