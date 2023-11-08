@@ -16,12 +16,7 @@ function Home() {
             key={`${Log.id}`}
             className="acceuil"
           >
-            <section
-              key={`${Log.id}`}
-              //onClick={(click) => {
-              // console.log(Log.id);
-              //}}
-            >
+            <section key={`${Log.id}`}>
               <img className="pictureCard" src={Log.cover} alt="Logement" />
               <div className="gradient div"></div>
               <p>{Log.title}</p>
