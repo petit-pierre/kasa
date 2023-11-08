@@ -8,13 +8,10 @@
 }
 
 .imageSlider {
-  width: 150%;
+  position: relative;
   min-width: 100%;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
+  height: 950px;
+  top: -315px;
 }
 @media screen and (max-width: 768px) {
   .imageSlider {

@@ -20,13 +20,16 @@ function Slider(house) {
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
+
   return (
     <div className="sliderContainer">
-      <img
-        className="imageSlider"
-        src={house.pictures[currentIndex]}
-        alt="slider"
-      ></img>
+      <div>
+        <img
+          className="imageSlider"
+          src={house.pictures[currentIndex]}
+          alt="slider"
+        ></img>
+      </div>
       {house.pictures.length > 1 ? (
         <div>
           <img

@@ -7,4 +7,13 @@
 .titleCollapse {
   font-size: 24px;
   padding-top: 5px;
+}
+
+.BannerAbout {
+  margin-bottom: 89px;
+}
+@media screen and (max-width: 768px) {
+  .BannerAbout {
+    margin-bottom: 89px;
+  }
 }/*# sourceMappingURL=about.css.map */

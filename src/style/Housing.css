@@ -15,9 +15,19 @@
   padding: 0;
   font-size: 36px;
 }
+@media screen and (max-width: 768px) {
+  .titleHousing {
+    font-size: 18px;
+  }
+}
 
 .locationHousing {
   color: #FF6060;
+}
+@media screen and (max-width: 768px) {
+  .locationHousing {
+    font-size: 14px;
+  }
 }
 
 .tags {
@@ -29,7 +39,7 @@
 }
 .tags .tag {
   padding: 5px;
-  width: 120px;
+  min-width: 120px;
   background-color: #FF6060;
   margin: 10px;
   border-radius: 20px;
@@ -38,20 +48,42 @@
   margin-bottom: 24px;
   margin-left: 0;
 }
+@media screen and (max-width: 768px) {
+  .tags .tag {
+    min-width: 84px;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+}
 
 .leftSide {
-  width: 50%;
+  width: 70%;
   margin-top: 30px;
 }
 
 .rightSide {
-  width: 50%;
+  width: 30%;
   margin-top: 30px;
+}
+@media screen and (max-width: 768px) {
+  .rightSide {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 40px;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: -20px;
+  }
 }
 
 .housing {
   display: flex;
   flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .housing {
+    flex-direction: column;
+  }
 }
 
 .hostPicture {
@@ -59,6 +91,12 @@
   height: 64px;
   border-radius: 50px;
   margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .hostPicture {
+    height: 32px;
+    width: 32px;
+  }
 }
 
 .content p {
@@ -70,14 +108,29 @@
   flex-direction: row;
   margin-bottom: -150px;
 }
+@media screen and (max-width: 768px) {
+  .collapseSection {
+    flex-direction: column;
+  }
+}
 
 .collapse {
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .collapse {
+    width: 100%;
+  }
 }
 
 .collapseDescription {
   width: 50%;
   margin-right: 76px;
+}
+@media screen and (max-width: 768px) {
+  .collapseDescription {
+    width: 100%;
+  }
 }
 
 .host {
@@ -86,14 +139,33 @@
 }
 
 .hostName {
-  width: 50px;
+  width: 80px;
   margin-right: 10px;
   font-size: 18px;
   color: #FF6060;
+}
+@media screen and (max-width: 768px) {
+  .hostName {
+    font-size: 12px;
+    width: 60px;
+  }
 }
 
 .stars {
   display: flex;
   justify-content: right;
   margin-top: 25px;
-}/*# sourceMappingURL=housing.css.map */
+}
+@media screen and (max-width: 768px) {
+  .stars {
+    justify-content: left;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .star {
+    width: 18px;
+    height: 18px;
+  }
+}/*# sourceMappingURL=Housing.css.map */

@@ -3,7 +3,7 @@
 }
 
 .content-parent {
-    height: 0px;
+    max-height: 0px;
     overflow: hidden;
     transform: translateY(0px);
     transition: all ease 0.9s;
@@ -18,7 +18,7 @@
     overflow: hidden;
     transform: translateY(0px);
     transition: all ease 0.9s;
-    height: 220px;
+    max-height: 300px;
     border-radius: 0 0 5px 5px;
     background-color:#F6F6F6;
     margin: 0px 0px 0px 0px;

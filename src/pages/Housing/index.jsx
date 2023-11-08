@@ -35,11 +35,31 @@ function Housing() {
             <p className="hostName">{house.host.name}</p>
           </div>
           <div className="stars">
-            <img className="star" src={StarActive} alt="logo etoile" />
-            <img className="star" src={StarActive} alt="logo etoile" />
-            <img className="star" src={StarActive} alt="logo etoile" />
-            <img className="star" src={StarActive} alt="logo etoile" />
-            <img className="star" src={StarActive} alt="logo etoile" />
+            <img
+              className="star"
+              src={house.rating < 1 ? StarInactive : StarActive}
+              alt="logo etoile"
+            />
+            <img
+              className="star"
+              src={house.rating < 2 ? StarInactive : StarActive}
+              alt="logo etoile"
+            />
+            <img
+              className="star"
+              src={house.rating < 3 ? StarInactive : StarActive}
+              alt="logo etoile"
+            />
+            <img
+              className="star"
+              src={house.rating < 4 ? StarInactive : StarActive}
+              alt="logo etoile"
+            />
+            <img
+              className="star"
+              src={house.rating < 5 ? StarInactive : StarActive}
+              alt="logo etoile"
+            />
           </div>
         </div>
       </section>

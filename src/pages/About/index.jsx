@@ -7,7 +7,7 @@ let CollapseAbout = require(`../../data/collapse-about.json`);
 function About() {
   return (
     <div>
-      <img className="Banner" src={EnTete} alt="En tete" />
+      <img className="BannerAbout Banner" src={EnTete} alt="En tete" />
       {Collapse(CollapseAbout[0].name, CollapseAbout[0].content)}
       {Collapse(CollapseAbout[1].name, CollapseAbout[1].content)}
       {Collapse(CollapseAbout[2].name, CollapseAbout[2].content)}
