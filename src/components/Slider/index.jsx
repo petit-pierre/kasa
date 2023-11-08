@@ -3,6 +3,7 @@ import "../../style/slider.css";
 import ArrowLeft from "../../assets/arrowLeft.png";
 import ArrowRight from "../../assets/arrowRight.png";
 import { useState } from "react";
+import { CarouselItem } from "./CarouselItem";
 
 function Slider(house) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -23,12 +24,13 @@ function Slider(house) {
 
   return (
     <div className="sliderContainer">
-      <div>
-        <img
-          className="imageSlider"
-          src={house.pictures[currentIndex]}
-          alt="slider"
-        ></img>
+      <div
+        className="inner"
+        style={{ transform: `translate(-${currentIndex * 100}%)` }}
+      >
+        {house.pictures.map((item) => {
+          return <CarouselItem key={`${item}`} item={item} width={"100%"} />;
+        })}
       </div>
       {house.pictures.length > 1 ? (
         <div>

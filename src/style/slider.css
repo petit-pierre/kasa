@@ -5,18 +5,25 @@
   border-radius: 20px;
   overflow: hidden;
   position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.imageSlider {
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 490px;
+  background-color: #fff;
+}
+
+.carousel-img {
   position: relative;
   min-width: 100%;
-  height: 950px;
-  top: -315px;
-}
-@media screen and (max-width: 768px) {
-  .imageSlider {
-    width: 200%;
-  }
+  min-height: 415px;
 }
 
 .counter {
@@ -42,4 +49,10 @@
   top: 170px;
   right: 0px;
   cursor: pointer;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }/*# sourceMappingURL=slider.css.map */
