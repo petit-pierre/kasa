@@ -1,6 +1,6 @@
 import Arrow from "../../assets/Vector.png";
-import "../../style/collapse.css";
-import "../../style/about.css";
+import "./collapse.css";
+import "../../pages/About/about.css";
 import React, { useState } from "react";
 
 function Collapse({ name, content }) {

@@ -1,6 +1,6 @@
 import EnTete from "../../assets/IMG.png";
 import "../../style/style.css";
-import "../../style/Home.css";
+import "./home.css";
 import { Link } from "react-router-dom";
 let Logements = require(`../../data/logements.json`);
 

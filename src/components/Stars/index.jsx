@@ -1,7 +1,7 @@
 import StarActive from "../../assets/star-active.png";
 import StarInactive from "../../assets/star-inactive.png";
 import "../../style/style.css";
-import "../../style/Housing.css";
+import "../../pages/Housing/housing.css";
 
 function Stars({ house }) {
   return (

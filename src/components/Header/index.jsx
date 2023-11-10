@@ -1,6 +1,6 @@
 import LogoKaza from "../../assets/LOGOheader.png";
 import { NavLink } from "react-router-dom";
-import "../../style/header.css";
+import "./header.css";
 import "../../style/style.css";
 
 function Header() {

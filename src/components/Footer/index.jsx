@@ -1,5 +1,5 @@
 import LogoKaza from "../../assets/LOGOfooter.png";
-import "../../style/footer.css";
+import "./footer.css";
 import "../../style/style.css";
 
 function Footer() {

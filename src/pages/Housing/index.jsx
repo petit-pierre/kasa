@@ -4,7 +4,7 @@ import Tags from "../../components/Tags";
 import Host from "../../components/Host";
 import { Navigate } from "react-router-dom";
 import "../../style/style.css";
-import "../../style/Housing.css";
+import "./housing.css";
 import Collapse from "../../components/Collapse";
 import { useParams } from "react-router-dom";
 let Logements = require(`../../data/logements.json`);

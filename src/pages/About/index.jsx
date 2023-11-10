@@ -1,6 +1,6 @@
 import EnTete from "../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png";
 import "../../style/style.css";
-import "../../style/about.css";
+import "./about.css";
 import Collapse from "../../components/Collapse";
 let CollapseAbout = require(`../../data/collapse-about.json`);
 

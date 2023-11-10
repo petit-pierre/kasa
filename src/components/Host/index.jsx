@@ -1,5 +1,5 @@
 import "../../style/style.css";
-import "../../style/Housing.css";
+import "../../pages/Housing/housing.css";
 
 function Host({ house }) {
   return (
