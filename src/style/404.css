@@ -5,12 +5,26 @@
 
 .bigTitle {
   font-size: 288px;
-  margin: 139px;
+  margin-top: 139px;
+  margin-bottom: 139px;
+}
+@media screen and (max-width: 768px) {
+  .bigTitle {
+    font-size: 96px;
+    margin-top: 113px;
+    margin-bottom: 113px;
+  }
 }
 
 .text {
   font-size: 36px;
   margin-bottom: 139px;
+}
+@media screen and (max-width: 768px) {
+  .text {
+    margin-bottom: 113px;
+    font-size: 18px;
+  }
 }
 
 .acceuil {
@@ -20,4 +34,10 @@
 
 .footer {
   margin-top: 139px;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 113px;
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=404.css.map */
