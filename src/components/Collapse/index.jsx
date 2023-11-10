@@ -3,7 +3,7 @@ import "../../style/collapse.css";
 import "../../style/about.css";
 import React, { useState } from "react";
 
-function Collapse(name, content) {
+function Collapse({ name, content }) {
   const [open, setOPen] = useState(false);
   const toggle = () => {
     setOPen(!open);

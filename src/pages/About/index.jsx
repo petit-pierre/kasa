@@ -8,10 +8,15 @@ function About() {
   return (
     <div>
       <img className="BannerAbout Banner" src={EnTete} alt="En tete" />
-      {Collapse(CollapseAbout[0].name, CollapseAbout[0].content)}
-      {Collapse(CollapseAbout[1].name, CollapseAbout[1].content)}
-      {Collapse(CollapseAbout[2].name, CollapseAbout[2].content)}
-      {Collapse(CollapseAbout[3].name, CollapseAbout[3].content)}
+      {CollapseAbout.map((forCollapse) => {
+        return (
+          <Collapse
+            key={`${forCollapse.id}`}
+            name={forCollapse.name}
+            content={forCollapse.content}
+          />
+        );
+      })}
     </div>
   );
 }

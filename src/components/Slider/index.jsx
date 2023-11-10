@@ -5,20 +5,20 @@ import ArrowRight from "../../assets/arrowRight.png";
 import { useState } from "react";
 import { CarouselItem } from "./CarouselItem";
 
-function Slider(house) {
+function Slider({ house }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const previousPicture = () => {
+    const index = currentIndex;
     const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide
-      ? house.pictures.length - 1
-      : currentIndex - 1;
+    const newIndex = isFirstSlide ? house.pictures.length - 1 : index - 1;
     setCurrentIndex(newIndex);
   };
 
   const nextPicture = () => {
+    const index = currentIndex;
     const isLastSlide = currentIndex === house.pictures.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    const newIndex = isLastSlide ? 0 : index + 1;
     setCurrentIndex(newIndex);
   };
 
