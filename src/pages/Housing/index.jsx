@@ -1,7 +1,6 @@
 import Slider from "../../components/Slider";
+import Stars from "../../components/Stars";
 import { Navigate } from "react-router-dom";
-import StarActive from "../../assets/star-active.png";
-import StarInactive from "../../assets/star-inactive.png";
 import "../../style/style.css";
 import "../../style/Housing.css";
 import Collapse from "../../components/Collapse";
@@ -39,31 +38,7 @@ function Housing() {
             <p className="hostName">{house.host.name}</p>
           </div>
           <div className="stars">
-            <img
-              className="star"
-              src={house.rating < 1 ? StarInactive : StarActive}
-              alt="logo etoile"
-            />
-            <img
-              className="star"
-              src={house.rating < 2 ? StarInactive : StarActive}
-              alt="logo etoile"
-            />
-            <img
-              className="star"
-              src={house.rating < 3 ? StarInactive : StarActive}
-              alt="logo etoile"
-            />
-            <img
-              className="star"
-              src={house.rating < 4 ? StarInactive : StarActive}
-              alt="logo etoile"
-            />
-            <img
-              className="star"
-              src={house.rating < 5 ? StarInactive : StarActive}
-              alt="logo etoile"
-            />
+            <Stars house={house} />
           </div>
         </div>
       </section>
