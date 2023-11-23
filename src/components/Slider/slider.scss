@@ -25,7 +25,7 @@
     //width: 150%;
     min-width: 100%;
     //min-height: 100%;
-    min-height: 415px;
+    min-height: 490px;
     //top: -115px;
   }
 
@@ -36,6 +36,9 @@
     left: 48%;
     font-size: 18px;
     color: #FFF; 
+    @media screen and (max-width: 768px){
+      display: none;
+  }
 }
 
 .arrowLeft {

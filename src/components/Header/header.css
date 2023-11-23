@@ -26,6 +26,7 @@
   .liens .about, .liens .acceuil {
     padding-left: 20px;
     font-size: 12px;
+    text-transform: uppercase;
   }
 }
 .liens .active {
