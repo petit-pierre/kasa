@@ -7,7 +7,10 @@ let Logements = require(`../../data/logements.json`);
 function Home() {
   return (
     <div className="div">
-      <img className="Banner" src={EnTete} alt="En tete" />
+      <div className="BannerDiv">
+        <img className="Banner" src={EnTete} alt="En tete" />
+        <p className="BannerText">Chez vous, partout et ailleurs</p>
+      </div>
 
       <div className="card div">
         {Logements.map((Log) => (

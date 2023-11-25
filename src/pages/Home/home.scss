@@ -1,3 +1,23 @@
+.BannerDiv {
+    position: relative;
+}
+
+.BannerText {
+    position: absolute;
+    top: 30px;
+    font-size: 48px;
+    color: white;
+        left: 14%;
+        right: 14%;
+        
+    @media screen and (max-width: 768px){
+        font-size: 24px;
+        top: 0;
+        left: 15px;
+        right: 60px;
+    }
+}
+
 .div {
     margin: 0px 45px 0px;
     margin-bottom: 80px;
@@ -90,6 +110,8 @@
 
 .Banner {
     margin-bottom: 89px;
+    height: 223px;
+    filter: brightness(80%);
     @media screen and (max-width: 768px){
         margin-bottom: 10px;
         height: 111px;

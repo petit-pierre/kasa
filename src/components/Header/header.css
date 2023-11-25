@@ -12,6 +12,12 @@
 .LogoKaza {
   height: 3em;
 }
+@media screen and (max-width: 768px) {
+  .LogoKaza {
+    height: 2em;
+    padding-top: 10px;
+  }
+}
 
 .liens {
   margin-top: 17px;

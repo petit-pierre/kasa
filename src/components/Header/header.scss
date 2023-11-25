@@ -9,6 +9,10 @@
 
 .LogoKaza {
     height: 3em;
+    @media screen and (max-width: 768px){
+        height: 2em;
+        padding-top: 10px;
+    }
 }
 
 .liens {
