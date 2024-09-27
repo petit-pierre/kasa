@@ -16,10 +16,17 @@ root.render(
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Housing/:houseNumber" element={<Housing />} />
-        <Route path="/About" element={<About />} />
-        <Route path="*" element={<Error404 />} />
+        <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />} />
+        <Route
+          path={`${process.env.PUBLIC_URL}/index.html`}
+          element={<Home />}
+        />
+        <Route
+          path={`${process.env.PUBLIC_URL}/Housing/:houseNumber`}
+          element={<Housing />}
+        />
+        <Route path={`${process.env.PUBLIC_URL}/About`} element={<About />} />
+        <Route path={`${process.env.PUBLIC_URL}/*`} element={<Error404 />} />
       </Routes>
       <Footer />
     </Router>

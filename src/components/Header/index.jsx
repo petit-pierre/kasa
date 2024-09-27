@@ -8,10 +8,10 @@ function Header() {
     <div className="header">
       <img className="LogoKaza" src={LogoKaza} alt="Logo Kaza"></img>
       <nav className="liens">
-        <NavLink to="./" className="acceuil">
+        <NavLink to={`${process.env.PUBLIC_URL}/`} className="acceuil">
           Accueil
         </NavLink>
-        <NavLink to="./About" className="about">
+        <NavLink to={`${process.env.PUBLIC_URL}/About`} className="about">
           A propos
         </NavLink>
       </nav>
