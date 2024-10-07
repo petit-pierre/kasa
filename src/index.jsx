@@ -10,6 +10,9 @@ import Footer from "./components/Footer";
 
 import reportWebVitals from "./reportWebVitals";
 
+//process.env.PUBLIC_URL = "https://pierre-le-developpeur.com/kasa";
+
+//console.log(process.env.PUBLIC_URL);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -27,6 +30,7 @@ root.render(
         />
         <Route path={`${process.env.PUBLIC_URL}/About`} element={<About />} />
         <Route path={`${process.env.PUBLIC_URL}/*`} element={<Error404 />} />
+        <Route path={`${process.env.PUBLIC_URL}/404/`} element={<Error404 />} />
       </Routes>
       <Footer />
     </Router>

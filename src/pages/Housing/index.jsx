@@ -13,7 +13,7 @@ function Housing() {
   const { houseNumber } = useParams();
   const house = Logements.find((Logements) => Logements.id === houseNumber);
   if (!house) {
-    return <Navigate to="../404/" replace={true} />;
+    return <Navigate to={process.env.PUBLIC_URL + "/404/"} replace={true} />;
   }
   return (
     <div>

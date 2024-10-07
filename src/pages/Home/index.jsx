@@ -15,7 +15,7 @@ function Home() {
       <div className="card div">
         {Logements.map((Log) => (
           <Link
-            to={"./Housing/" + Log.id}
+            to={process.env.PUBLIC_URL + "/Housing/" + Log.id}
             key={`${Log.id}`}
             className="acceuil"
           >

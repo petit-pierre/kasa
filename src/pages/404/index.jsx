@@ -7,7 +7,7 @@ function Error404() {
     <div className="global">
       <h1 className="bigTitle">404</h1>
       <p className="text">Oups! La page que vous demandez n'existe pas.</p>
-      <Link to="./" className="acceuil">
+      <Link to={process.env.PUBLIC_URL + "/"} className="acceuil">
         Retourner sur la page d’accueil
       </Link>
     </div>
